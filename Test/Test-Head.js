@@ -12,7 +12,7 @@ describe("#Head", () =>
   {
     assert.strictEqual(head(['5']), '5');
   });
-  it("Returns '5' for [5, 6, 7]", () =>
+  it("Returns 5 for [5, 6, 7]", () =>
   {
     assert.strictEqual(head([5, 6, 7]), 5);
   });
