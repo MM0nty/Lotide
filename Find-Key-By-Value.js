@@ -2,17 +2,12 @@ const findKeyByValue = function(object, value)
 {
   for (key of Object.keys(object))
   {
-    if (key === value)
+    if (object[key] === value)
     {
-      console.log(object, " ", object.value);
-      return value;
-    }
-    else
-    {
-      console.log("undefined");
+      console.log(`${object[key]} = ${value}`);
+      return key;
     }
   }
-  console.log(object);
 };
 
 const assertEqual = function(actual, expected)
