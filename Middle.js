@@ -1,4 +1,4 @@
-const assertArraysEqual = require("./Assert-Arrays-Equal");
+const assertArraysEqual = require("./AssertArraysEqual");
 
 const middle = function(array)
 {

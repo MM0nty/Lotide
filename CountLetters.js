@@ -1,4 +1,4 @@
-const assertEqual = require("./Assert-Equal");
+const assertEqual = require("./AssertEqual");
 
 const countLetters = function(string)
 {

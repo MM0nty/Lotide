@@ -1,15 +1,16 @@
 {
   "name": "lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project was created and published by me as part of my learnings at Lighthouse Labs. ",
   "main": "Lotide",
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "mpv3",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.0.3"
-  }
+  },
+  "dependencies": {}
 }
