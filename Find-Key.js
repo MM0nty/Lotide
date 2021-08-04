@@ -1,6 +1,15 @@
 const findKey = function(object, callback)
 {
-
+  for (key of Object.keys(object))
+  {
+    let value = object[key];
+    if (callback(value))
+    {
+      console.log(key);
+      return key;
+    }
+  }
+  return (console.log(undefined));
 }
 
 findKey({
