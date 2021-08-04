@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@mpv3/lotide",
   "version": "1.0.0",
   "description": "This project was created and published by me as part of my learnings at Lighthouse Labs. ",
   "main": "Lotide",
@@ -12,5 +12,13 @@
     "chai": "^4.3.4",
     "mocha": "^9.0.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MM0nty/Lotide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MM0nty/Lotide/issues"
+  },
+  "homepage": "https://github.com/MM0nty/Lotide#readme"
 }

@@ -4,15 +4,17 @@ const findKey = function(object, callback)
 {
   for (key of Object.keys(object))
   {
-    if (object[key] === callback)
+    let value = object[key];
+    if (callback(value))
     {
-      console.log(`${object[key]} = ${callback}`);
+      console.log(key);
       return key;
     }
   }
+  return (console.log(undefined));
 }
 
-assertEqual(findKey)
+assertEqual(findKey);
 
 findKey({
   "Blue Hill": {stars: 1},
