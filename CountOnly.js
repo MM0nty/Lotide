@@ -1,42 +1,19 @@
-// Given array and object
-// Will return object containing counts of everything listed
-// Only "truthy" values should be listed
-const countOnly = function(allItems, itemsToCount) // itemsToCount = result1
-{
+const countOnly = function(allItems, itemsToCount) {
   const results = {};
-  for (const item of allItems) // allItems = firstNames
-  {
-    if (itemsToCount[item])
-    {
-      if (!results[item])
-      {
+  for (const item of allItems) {
+    if (itemsToCount[item]) {
+      if (!results[item]) {
         results[item] = 1;
-      }
-      else if (results[item])
-      {
+      } else {
         results[item]++;
       }
-/*
-    if (itemsToCount[item])
-      { 
-        if (results[item])
-        {
-          results[item] += 1;
-        }
-        else
-        {
-          results[item] = 1;
-        }
-      }
-*/
     }
   }
   console.log(results);
   return results;
 };
 
-const firstNames =
-[
+const firstNames = [
   "Karl",
   "Salima",
   "Agouhanna",
@@ -48,21 +25,17 @@ const firstNames =
   "Joe"
 ];
 
-const result1 = countOnly(firstNames, {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false});
+const list = countOnly(firstNames, {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false});
 
-const assertEqual = function(actual, expected)
-{
-  if (actual === expected)
-  {
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
     console.log(`✅ Assertion passed: ${actual} === ${expected}`);
-  }
-  else
-  {
+  } else {
     console.log(`❌ Assertion failed: ${actual} !== ${expected}`);
   }
 };
 
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+assertEqual(list["Jason"], 1);
+assertEqual(list["Karima"], undefined);
+assertEqual(list["Fang"], 2);
+assertEqual(list["Agouhanna"], undefined);
