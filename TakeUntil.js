@@ -1,14 +1,12 @@
-const takeUntil = function(array,callback)
-{
-  let taken = [];
-  for (let x = 0; x < array.length; x++)
-  {
-    if (!callback(array[x]))
-    {
+const assertEqual = require("./AssertEqual");
+const assertArraysEqual = require("./AssertArraysEqual");
+
+const takeUntil = function(array,callback) {
+  const taken = [];
+  for (let x = 0; x < array.length; x++) {
+    if (!callback(array[x])) {
     taken.push(array[x]);
-    }
-    else
-    {
+    } else {
       return taken;
     }
   }
