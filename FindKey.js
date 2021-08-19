@@ -11,7 +11,6 @@ const findKey = function(object, callback) {
   return (console.log(undefined));
 }
 
-// assertEqual(findKey);
 assertEqual(
 findKey({
   "Blue Hill": {stars: 1},
