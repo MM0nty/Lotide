@@ -1,11 +1,12 @@
-const map = function(array, callback)
-{
-  const result = [];
-  for (let item of array)
-  {
-    result.push(callback(item));
+const assertEqual = require("./AssertEqual");
+const assertArraysEqual = require("./AssertArraysEqual");
+
+const map = function(array, callback) {
+  const results = [];
+  for (let item of array) {
+    results.push(callback(item));
   }
-  return result;
+  return results;
 }
 
 const words = ["ground", "control", "to", "major"];
