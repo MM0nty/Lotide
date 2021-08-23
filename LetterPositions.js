@@ -8,7 +8,6 @@ const letterPositions = function(sentence) {
       results[sentence[i]].push(i);
     };
   };
-  console.log(results);
   return results;
 };
 

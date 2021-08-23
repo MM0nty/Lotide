@@ -5,8 +5,7 @@ const without = function(source, toRemove) {
       filtered.push(source[i]);
     }
   }
-  console.log(`Original: ${source}`);
-  return console.log(filtered);
+  return filtered;
 };
 
 without([1, 2, 3], [1]); // [2, 3]

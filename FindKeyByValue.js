@@ -3,7 +3,6 @@ const assertEqual = require("./AssertEqual");
 const findKeyByValue = function(object, value) {
   for (key of Object.keys(object)) {
     if (object[key] === value) {
-      console.log(`${object[key]} = ${value}`);
       return key;
     }
   }

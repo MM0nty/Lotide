@@ -9,7 +9,7 @@ const countLetters = function(string) {
       letters[letter] = 1;
     }
   }
-  console.log(letters);
+  return letters;
 };
 
 module.exports = countLetters;

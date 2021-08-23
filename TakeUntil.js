@@ -10,7 +10,7 @@ const takeUntil = function(array,callback) {
       return taken;
     }
   }
-  console.log(taken);
+  return taken;
 }
 
 const data1 = [1, 2, 5, 7, 2, -1, 4, 5];

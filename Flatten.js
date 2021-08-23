@@ -9,7 +9,7 @@ const flatten = function(array) {
       flattened.push(item);
     }
   });
-  return console.log(flattened);
+  return flattened;
 };
 
 flatten([1, 2, [3, 4], 5, [6]]) // => [1, 2, 3, 4, 5, 6]
