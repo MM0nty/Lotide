@@ -14,3 +14,5 @@ without([1, 2, 3], [1, 2]); // [3]
 without([3, 4, 5], [4, 5]); // [3]
 without(["1", "2", "3"], [1, 2, "3"]); // ["1", "2"]
 without(["hello", "world", "lighthouse"], ["lighthouse"]);
+
+module.exports = without;

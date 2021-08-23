@@ -39,3 +39,5 @@ assertEqual(list["Jason"], 1);
 assertEqual(list["Karima"], undefined);
 assertEqual(list["Fang"], 2);
 assertEqual(list["Agouhanna"], undefined);
+
+module.exports = countOnly;

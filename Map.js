@@ -13,3 +13,5 @@ const words = ["ground", "control", "to", "major"];
 
 const result = map(words, word => word[0]);
 console.log(result);
+
+module.exports = map;
