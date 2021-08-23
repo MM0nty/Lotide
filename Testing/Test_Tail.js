@@ -2,6 +2,7 @@ const assert = require("chai").assert;
 const assertEqual = require("../AssertEqual");
 const tail = require("../Tail");
 
+/*
 describe("#Tail", () =>
 {
   it("Returns [1, 3, 0] for [2, 1, 3, 0]", () =>
@@ -21,8 +22,9 @@ describe("#Tail", () =>
     assert.deepEqual(tail([]), []);
   });
 });
+*/
 
-/*
+// /*
 const array = [2,1,3,0];
 console.log(tail(array));
 assertEqual(array.length, 4);
@@ -38,4 +40,4 @@ assertEqual(solo.length, 1);
 const empty = [];
 console.log(tail(empty));
 assertEqual(empty.length, 0);
-*/
+// */

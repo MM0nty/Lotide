@@ -6,12 +6,12 @@ const middle = function(array) {
     if (array.length % 2 === 0) {
       middleArray.push(array[(array.length / 2) - 1]);
       middleArray.push(array[array.length / 2]);
-      return console.log(middleArray);
+      return middleArray;
     }
     middleArray.push(array[Math.floor(array.length / 2)]);
-    return console.log(middleArray);
+    return middleArray;
   }
-  return console.log(middleArray);
+  return middleArray;
 }
 
 module.exports = middle;
